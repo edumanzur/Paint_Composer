@@ -1,0 +1,52 @@
+#partitura {
+    background-color: darkgray;
+    padding: 30px 0px 320px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha {
+    margin-bottom: 30px;
+    padding: 1px 700px;
+    background-color: black;
+    position: relative;
+    float: left;
+}
+
+img {
+    background-color: none;
+    height: 180px;
+    position: relative;
+    right: 650px;
+    top: 170px;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+}
+
+.nota-f {
+    padding: 6px;
+    background-color: black;
+    position: relative;
+    border-radius: 50px;
+    bottom: 150px;
+    right: 500px;
+    display: none;
+}
+
+.nota-e {
+    padding: 6px;
+    background-color: black;
+    position: relative;
+    border-radius: 50px;
+    bottom: 177px;
+    right: 500px;
+    display: none;
+}

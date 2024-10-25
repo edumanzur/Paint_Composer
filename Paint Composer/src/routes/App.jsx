@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainPage from '../view/MainPage';
-import Login from '../view/Login';
+import Músicas from '../view/Músicas';
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
           <Routes>
               <Route path="/"
               Component={MainPage}/>
-              <Route path="/Login"
-              Component={Login}/>
+              <Route path="/Músicas"
+              Component={Músicas}/>
           </Routes>
       </Router>
     </>

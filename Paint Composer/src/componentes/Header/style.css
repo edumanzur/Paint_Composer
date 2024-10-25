@@ -1,3 +1,87 @@
 a {
     text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #C8C8B4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: solid 2px black;
+}
+
+.botao-header {
+    border-style: none;
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+#instrumentos {
+    margin-right: 90px;
+}
+
+.botao-menu {
+    border-style: none;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.botao-header:hover {
+    box-shadow: 2px 2px #ABABAB;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.botao-menu:hover {
+    box-shadow: 2px 2px #ABABAB;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#notas-gaita {
+    margin-top: 20px;
+    margin-right: 90px;
+    display: none;
+}
+
+.notas {
+    border-style: none;
+    margin-right: 4px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.notas:hover {
+    box-shadow: 2px 2px #ABABAB;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#notas-piano {
+    margin-top: 20px;
+    margin-right: 90px;
+    display: none;
+}
+
+#notas-gaita p {
+    margin-right: 4px;
+    margin-top: 3px;
+}
+
+#notas-piano p {
+    margin-right: 4px;
+    margin-top: 3px;
 }
