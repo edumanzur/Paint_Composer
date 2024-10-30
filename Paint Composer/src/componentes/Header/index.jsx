@@ -1,5 +1,6 @@
 import "./style.css"
 import { Link } from "react-router-dom"
+import bola from "../Partitura"
 
 export default function Header() {
     const gaita = () => {
@@ -18,14 +19,20 @@ export default function Header() {
             notas.style.display = 'flex'
         }
     }
-    const test = () => {
-        const bola = document.querySelector('#bola')
-        bola.style.display = ''
+    //Não funciona ainda
+    function test() {
+        bola.style.display = 'flex'
     }
+
+    const retirar = () => {
+        const ga = document.getElementById('instrumentos');
+        ga.style.display = 'none'
+    }
+
     return (
         <>
             <header>
-                <Link to='/'><h1>Paint Composer</h1></Link>
+                <Link to='/'><button id="link-main"><h1>Paint Composer</h1></button></Link>
                 <div id="geral">
                     <div id="instrumentos">
                         <button id="gaita" className="botao-header" onClick={gaita}>Gaita</button>
@@ -37,7 +44,7 @@ export default function Header() {
                         <button className="notas" id="c-gaita">C</button>
                         <button className="notas" id="d-gaita">D</button>
                         <button className="notas" id="e-gaita">E</button>
-                        <button className="notas" id="f-gaita">F</button>
+                        <button className="notas" id="f-gaita" onClick={test}>F</button>
                         <button className="notas" id="g-gaita">G</button>
                         <button className="notas" id="a-gaita">A</button>
                         <button className="notas" id="b-gaita">B</button>
@@ -54,7 +61,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div>
-                    <Link to='/Músicas'><button className="botao-menu">Músicas</button></Link>
+                    <Link onClick={retirar} to='/Músicas'><button className="botao-menu">Músicas</button></Link>
                     <button className="botao-menu">Login</button>
                 </div>
             </header>

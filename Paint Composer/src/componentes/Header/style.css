@@ -22,6 +22,7 @@ header {
 
 #instrumentos {
     margin-right: 90px;
+    display: flex;
 }
 
 .botao-menu {
@@ -84,4 +85,10 @@ header {
 #notas-piano p {
     margin-right: 4px;
     margin-top: 3px;
+}
+
+#link-main {
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
 }

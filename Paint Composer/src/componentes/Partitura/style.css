@@ -50,3 +50,11 @@ img {
     right: 500px;
     display: none;
 }
+
+#compasso {
+    padding: 100px 1px;
+    position: relative;
+    background-color: blueviolet;
+    bottom: 200px;
+    right: calc(600px);
+}
