@@ -2,11 +2,13 @@ import "./style.css";
 import { Link } from "react-router-dom";
 
 export default function Header({ onToggleVisibility }) {
+    //Funcionalidade para aparecer os botões com as notas da gaita
     const gaita = () => {
         let notas = document.getElementById('notas-gaita');
         notas.style.display = notas.style.display === 'flex' ? 'none' : 'flex';
     };
 
+    //Funcionalidade para aparecer os botões com as notas do piano
     const piano = () => {
         let notas = document.getElementById('notas-piano');
         notas.style.display = notas.style.display === 'flex' ? 'none' : 'flex';
@@ -14,13 +16,17 @@ export default function Header({ onToggleVisibility }) {
 
     return (
         <header>
+            {/* botão para a página principal */}
             <Link to='/'><button id="link-main"><h1>Paint Composer</h1></button></Link>
             <div id="geral">
                 <div id="instrumentos">
+                    {/* botões para aparecer os botões com as notas */}
                     <button id="gaita" className="botao-header" onClick={gaita}>Gaita</button>
                     <button id="piano" className="botao-header" onClick={piano}>Piano</button>
                     <button id="pausas" className="botao-header">Pausas</button>
                 </div>
+
+                {/* botões da gaita */}
                 <div id="notas-gaita">
                     <p>Notas da Gaita</p>
                     <button className="notas" id="c-gaita" onClick={() => onToggleVisibility('gaitaNotaC')}>C</button>
@@ -31,6 +37,7 @@ export default function Header({ onToggleVisibility }) {
                     <button className="notas" id="a-gaita" onClick={() => onToggleVisibility('gaitaNotaA')}>A</button>
                     <button className="notas" id="b-gaita" onClick={() => onToggleVisibility('gaitaNotaB')}>B</button>
                 </div>
+                {/* botões do piano */}
                 <div id="notas-piano">
                     <p>Notas do Piano</p>
                     <button className="notas" id="c-piano" onClick={() => onToggleVisibility('pianoNotaC')}>C</button>
@@ -43,6 +50,7 @@ export default function Header({ onToggleVisibility }) {
                 </div>
             </div>
             <div>
+                {/* botão para o página de músicas */}
                 <Link to='/Músicas'><button className="botao-menu">Músicas</button></Link>
                 <button className="botao-menu">Login</button>
             </div>

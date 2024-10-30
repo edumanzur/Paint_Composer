@@ -5,6 +5,7 @@ import Footer from "../../componentes/Footer";
 import "./style.css";
 
 export default function MainPage() {
+    //Funcionalidade para linkar os botões do header com as notas da partitura
     const [visibility, setVisibility] = useState({
         gaitaNotaC: false,
         gaitaNotaD: false,
@@ -21,7 +22,8 @@ export default function MainPage() {
         pianoNotaA: false,
         pianoNotaB: false,
     });
-
+    
+    //função para alterar a visibilidade da nota
     const onToggleVisibility = (nota) => {
         setVisibility((prev) => ({
             ...prev,
