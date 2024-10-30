@@ -36,8 +36,8 @@ img {
     background-color: black;
     position: relative;
     border-radius: 50px;
-    bottom: 150px;
-    right: 500px;
+    bottom: 403px;
+    right: 580px;
     display: none;
 }
 
@@ -46,8 +46,58 @@ img {
     background-color: black;
     position: relative;
     border-radius: 50px;
-    bottom: 177px;
-    right: 500px;
+    bottom: 387px;
+    right: 580px;
+    display: none;
+}
+
+.nota-c {
+    padding: 6px;
+    background-color: black;
+    position: relative;
+    border-radius: 50px;
+    bottom: 355px;
+    right: 580px;
+    display: none;
+}
+
+.nota-d {
+    padding: 6px;
+    background-color: black;
+    position: relative;
+    border-radius: 50px;
+    bottom: 371px;
+    right: 580px;
+    display: none;
+}
+
+.nota-g {
+    padding: 6px;
+    background-color: black;
+    position: relative;
+    border-radius: 50px;
+    bottom: 415px;
+    right: 580px;
+    display: none;
+}
+
+.nota-a {
+    padding: 6px;
+    background-color: black;
+    position: relative;
+    border-radius: 50px;
+    bottom: 323px;
+    right: 580px;
+    display: none;
+}
+
+.nota-b {
+    padding: 6px;
+    background-color: black;
+    position: relative;
+    border-radius: 50px;
+    bottom: 339px;
+    right: 580px;
     display: none;
 }
 
